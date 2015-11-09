@@ -1,10 +1,10 @@
 # Find the common element between two arrays.
 def common_element(array1, array2)
   common = array1 & array2
-  if common.length > 0
-    common
-  else
+  if common.empty?
     return nil
+  else
+    return common
   end
 end
 
